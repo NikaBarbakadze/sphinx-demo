@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Firago";
+    src:  url('/fonts/FiraGo-Bold.woff2') format('woff2'),
+    url('/fonts/FiraGo-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: Bold;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Firago";
+    src:  url('/fonts/FiraGo-Regular.woff2') format('woff2'),
+    url('/fonts/FiraGo-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  h1{
+      font-family: "Firago";
+      font-weight: bold;
+  }
+
+  p{
+      font-family: "Firago";
+      font-weight: 400;
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
