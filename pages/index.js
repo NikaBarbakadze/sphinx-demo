@@ -47,10 +47,6 @@ export default function Home({question_data}) {
 }
 
 export const getStaticProps = async () => {
-  function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-  }
-
   let rndNumber = getRndInteger(1, 1449)
 
   const req = await fetch(`https://sphinx-project-demo-default-rtdb.europe-west1.firebasedatabase.app/questions_list/${rndNumber}.json`);
