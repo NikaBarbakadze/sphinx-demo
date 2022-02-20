@@ -54,6 +54,6 @@ export const getStaticProps = async () => {
 
   return {
       props: { question_data: data},
-      revalidate: 5,
+      revalidate: 1,
   }
 }
