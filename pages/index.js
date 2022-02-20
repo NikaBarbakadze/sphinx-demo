@@ -53,6 +53,7 @@ export const getStaticProps = async () => {
   const data =  await req.json();
 
   return {
-      props: { question_data: data}
+      props: { question_data: data},
+      revalidate: 5,
   }
 }
